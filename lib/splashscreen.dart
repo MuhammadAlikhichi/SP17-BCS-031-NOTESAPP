@@ -24,9 +24,9 @@ class _splashscreenState extends State<splashscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.red,
       ),
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.red,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
