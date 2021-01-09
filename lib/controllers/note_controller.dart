@@ -63,6 +63,9 @@ class NoteController extends GetxController {
     getAllNotes();
   }
 
+  //
+
+
   void updateNote(int id, String dTCreated) async {
     final title = titleController.text;
     final content = contentController.text;
@@ -71,7 +74,7 @@ class NoteController extends GetxController {
       title: title,
       content: content,
       dateTimeEdited:
-          DateFormat("MMM dd, yyyy HH:mm:ss").format(DateTime.now()),
+      DateFormat("MMM dd, yyyy HH:mm:ss").format(DateTime.now()),
       dateTimeCreated: dTCreated,
     );
     await DatabaseHelper.instance.updateNote(note);
