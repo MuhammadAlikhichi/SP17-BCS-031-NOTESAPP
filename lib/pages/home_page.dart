@@ -6,6 +6,7 @@ import '../controllers/note_controller.dart';
 import '../pages/add_new_note_page.dart';
 import '../pages/note_detail_page.dart';
 import '../widgets/alertdialog_widget.dart';
+// import '../widgets/search_bar.dart';
 import '../widgets/search_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -129,6 +130,12 @@ class HomePage extends StatelessWidget {
               showSearch(context: context, delegate: SearchBar());
             },
           ),
+          // IconButton(
+          //   icon: Icon(Icons.search),
+          //   onPressed: () {
+          //     showSearch(context: context, delegate: SearchBar());
+          //   },
+          // ),
           PopupMenuButton(
             onSelected: (val) {
               if (val == 0) {
