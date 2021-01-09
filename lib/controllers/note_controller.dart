@@ -50,6 +50,18 @@ class NoteController extends GetxController {
     Get.back();
   }
 
+  // void deleteNote(int id) async {
+  //   Note note = Note(
+  //     id: id,
+  //   );
+  //   await DatabaseHelper.instance.deleteNote(note);
+  //   getAllNotes();
+  // }
+  //
+  // void deleteAllNotes() async {
+  //   await DatabaseHelper.instance.deleteAllNotes();
+  //   getAllNotes();
+  // }
   void deleteNote(int id) async {
     Note note = Note(
       id: id,
@@ -62,8 +74,6 @@ class NoteController extends GetxController {
     await DatabaseHelper.instance.deleteAllNotes();
     getAllNotes();
   }
-
-  //
 
 
   void updateNote(int id, String dTCreated) async {
